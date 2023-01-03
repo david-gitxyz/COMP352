@@ -1,0 +1,26 @@
+David Xie
+40065595
+November 15, 2020
+COMP352 - Assignment 3 Programming Questions
+
+Part III)
+For the following, I am assuming that n is the number of entries.
+a)
+Time Complexity:
+
+Sorted List: It is O(n) because the worst running time operation is the insert operation at O(n) while the other operations run at O(1). In the best case running time, the list of jobs is already sorted by current priority. The insert method's loop will only execute once per insert call since the new entry will always be lower priority than the last entry of the list, in other words, it is already in the correct position. All other operations of the insert method already run at constant time. Thus, the insert operation will simply run at constant time for each call. Therefore, the best-case time complexity is Omega(1)
+
+Array-list-based heap: It is O(log n) because the worst running time operations are the insert and removeMin operations which at worst run at O(log n) time which is amortized since the priority queue uses a dynamic array. The other operations of the priority queue run at O(1) time. In the best case running time, the list of jobs is already sorted by current priority. While the insert method becomes constant running time, the removeMin method will be log n running time as it will swap the lowest priority to the root and downheaped. Thus, it is Omega(log n). 
+
+
+
+b)
+Space Complexity:
+
+Sorted List: It is O(n) because the priority queue makes a doubly-linked list with n nodes.
+
+Array-list-based heaps: It is O(n) because the priority queue makes a tree with n nodes.
+
+
+c)
+There was a significant difference in performance between the sorted list and the array-list-based heap implementations. The performance was similar when the number of jobs was 100, with the sorted list even performing better than the array-list-based heap, but for higher numbers (1000, 10000), the array-list-based heap implementation was significantly faster at executing and processing the jobs. This can be explained for the worst and best running times of the implementations. It could be during the 100 job simulation, the sorted list's job array was already decently sorted which could result in its implementation being slightly faster. However, with increasing number of jobs at 1000 and 10000, it would be reasonable to think that it is less likely that the array is originally well sorted and would probably need to be sorted throroughly by the implementation which would run at worst linear time. The array-list-based heap however runs at worst log n time, a significant improvement compared to the linear time sorted list. This could explain the significant difference in performance between the two implementations.

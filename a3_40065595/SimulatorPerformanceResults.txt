@@ -1,0 +1,78 @@
+Here are the results when maxNumberOfJobs is set to 100:
+
+1) Sorted List Priority Queue
+
+Current system time (cycles): 3559
+Total number of jobs executed: 100 jobs
+Average process waiting time: 1679 cycles
+Total number of priority changes: 3
+Actual system time needed to execute all jobs: 90 ms
+
+2) Array-List-Based Heap Priority Queue
+
+Current system time (cycles): 3582
+Total number of jobs executed: 100 jobs
+Average process waiting time: 1688 cycles
+Total number of priority changes: 3
+Actual system time needed to execute all jobs: 141 ms
+
+
+
+Here are the results when maxNumberOfJobs is set to 1000:
+
+1) Sorted List Priority Queue
+
+Current system time (cycles): 37072
+Total number of jobs executed: 1000 jobs
+Average process waiting time: 18698 cycles
+Total number of priority changes: 32
+Actual system time needed to execute all jobs: 503 ms
+
+2) Array-List-Based Heap Priority Queue
+
+Current system time (cycles): 37142
+Total number of jobs executed: 1000 jobs
+Average process waiting time: 18672 cycles
+Total number of priority changes: 33
+Actual system time needed to execute all jobs: 299 ms
+
+
+
+Here are the results when maxNumberOfJobs is set to 10 000:
+1) Sorted List Priority Queue
+
+Current system time (cycles): 378333
+Total number of jobs executed: 10000 jobs
+Average process waiting time: 190967 cycles
+Total number of priority changes: 532
+Actual system time needed to execute all jobs: 11099 ms
+
+2) Array-List-Based Heap Priority Queue
+
+Current system time (cycles): 378654
+Total number of jobs executed: 10000 jobs
+Average process waiting time: 190138 cycles
+Total number of priority changes: 576
+Actual system time needed to execute all jobs: 3372 ms
+
+
+
+Here are the results when maxNumberOfJobs is set to 100 000:
+1) Sorted List Priority Queue
+
+N too big. Taking over 120 seconds actual time, removing this N.
+
+2) Array-List-Based Heap Priority Queue
+
+N too big. Taking over 120 seconds actual time, removing this N.
+
+
+
+Here are the results when maxNumberOfJobs is set to 1 000 000:
+1) Sorted List Priority Queue
+
+N too big. Taking over 120 seconds actual time, removing this N.
+
+2) Array-List-Based Heap Priority Queue
+
+N too big. Taking over 120 seconds actual time, removing this N.
