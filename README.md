@@ -12,6 +12,6 @@ Version 1: Recursive <br/>
 Version 2: Iterative <br/>
 
 ## Assignment 3: CPU (November 13, 2020)
-Program that simulates a CPU scheduling jobs using: <br/>
+Program that simulates CPU scheduling jobs using: <br/>
 1: Sorted List <br/>
 2: Array-list-based heap
